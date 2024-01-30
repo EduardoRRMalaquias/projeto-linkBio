@@ -33,3 +33,39 @@ main {
   background-image: url(img/frame-iphone.png);
   background-repeat: no-repeat;
 }
+
+#tela {
+  position: relative;
+  top: 80px;
+  left: 23px;
+  width: 269px;
+  height: 471px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
+nav img {
+  width: 55px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px #000000a3;
+}
+
+nav img:hover {
+  border: 2px solid white;
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 8px #898989a3;
+  transition: transform 0.7s, box-shadow 0.7s, border 0.2s;
+}
